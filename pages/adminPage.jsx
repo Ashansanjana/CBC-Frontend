@@ -1,4 +1,5 @@
 import { Link,Routes,Route } from "react-router-dom";
+import AdminProductPage from "./admin/adminProductPage.jsx";
 
 export default function AdminPage() {
   return (
@@ -13,7 +14,7 @@ export default function AdminPage() {
         <div className="h-full w-[calc(100%-300px)] bg-amber-300">
             <Routes path="/*">
                 <Route path="/users" element={<div>Admin Users Page</div>} />
-                <Route path="/products" element={<div>Admin Products Page</div>} />
+                <Route path="/products" element={<AdminProductPage/>} />
                 <Route path="/orders" element={<div>Admin Orders Page</div>} />
                 <Route path="/settings" element={<div>Admin Riview Page</div>} />
                 <Route path="*" element={<div>Admin 404 Not Found</div>} />
