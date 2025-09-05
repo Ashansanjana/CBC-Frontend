@@ -5,6 +5,7 @@ import Register from '../pages/registerPage.jsx'
 import './App.css'
 import AdminPage from '../pages/adminPage.jsx'
 import { Toaster } from 'react-hot-toast';
+import { TestPage } from '../pages/testPage.jsx'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path ='/test' element={<TestPage/>}/>
         <Route path='/*' element={<div>404 Not Found</div>}/>
         <Route path='/admin/*' element={<AdminPage/>}/>
       </Routes>
@@ -26,3 +28,5 @@ function App() {
 }
 
 export default App
+
+
